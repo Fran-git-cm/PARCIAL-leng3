@@ -1,5 +1,4 @@
-// Ejercicio 1 - Validaciones
-
+// Validaciones
 function validarNombre() {
     var nombre = document.getElementById("nombre").value;
     var regex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$/;
@@ -55,10 +54,7 @@ function validarFormulario() {
     mensaje.innerHTML = ok ? "Inscripcion enviada con exito!" : "Hay errores en el formulario";
     mensaje.style.color = ok ? "green" : "red";
 }
-
-
-// Ejercicio 2 - Preguntas progresivas
-
+// Preguntas progresivas
 function hacerPreguntas() {
     var r1 = prompt("¿Cual es tu nacionalidad?");
     var r2 = prompt("¿Cual es tu nivel en programacion? (Basico / Intermedio / Avanzado)");
