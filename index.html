@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscripcion al Curso</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Formulario de Inscripcion</h1>
+
+    <div id="formulario">
+
+        <label>Nombre y Apellido:</label>
+        <input type="text" id="nombre">
+        <span id="error-nombre"></span>
+
+        <label>DNI:</label>
+        <input type="text" id="dni">
+        <span id="error-dni"></span>
+
+        <label>Fecha de Nacimiento:</label>
+        <input type="date" id="fecha">
+        <span id="error-fecha"></span>
+
+        <div id="mensaje"></div>
+
+        <div class="botones">
+            <button type="button" onclick="validarFormulario()">Enviar</button>
+            <button type="button" onclick="hacerPreguntas()">Preguntas</button>
+        </div>
+
+        <div id="respuestas"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
